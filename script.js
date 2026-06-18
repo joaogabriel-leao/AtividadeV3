@@ -48,14 +48,4 @@ document.querySelector('.next').addEventListener('click', () => {
   mostrarDepoimento(atual);
 });
 
-// =============================================
-// SCROLL SUAVE
-// Ao clicar em links âncora (href="#..."), a página rola suavemente até a seção correspondente
-// =============================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', (e) => {
-    e.preventDefault();
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
+
