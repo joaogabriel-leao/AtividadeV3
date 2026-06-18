@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoElite - Vendas de Carros</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Auto<span>Elite</span></h1>
+      <nav class="nav" id="nav">
+        <a href="#inicio">Home</a>
+        <a href="#veiculos">Veículos</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Hero com busca -->
+  <section class="hero" id="inicio">
+    <div class="hero-overlay">
+      <h2>ENCONTRE SEU CARRO IDEAL!</h2>
+      <form class="busca-form">
+        <div class="busca-campo">
+          <label>Modelo</label>
+          <input type="text" placeholder="Ex: Civic, Corolla...">
+        </div>
+        <div class="busca-campo">
+          <label>Ano mínimo</label>
+          <input type="number" placeholder="2020">
+        </div>
+        <div class="busca-campo">
+          <label>Preço até</label>
+          <input type="text" placeholder="R$ 150.000">
+        </div>
+        <button type="submit" class="btn-buscar">Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Seção descritiva -->
+  <section class="descricao">
+    <div class="container descricao-content">
+      <div class="descricao-texto">
+        <h2>Próximos lançamentos & ofertas</h2>
+        <p>Encontre os melhores veículos seminovos com garantia, procedência verificada e condições especiais de financiamento. Nossa equipe seleciona cada carro com rigor para garantir a melhor experiência na sua compra. Visite nossa loja e descubra ofertas exclusivas com as melhores taxas do mercado.</p>
+        <a href="#veiculos" class="btn-saiba-mais">Saiba mais</a>
+      </div>
+      <div class="descricao-img"></div>
+    </div>
+  </section>
+
+  <!-- Grid de veículos -->
+  <section class="veiculos" id="veiculos">
+    <div class="container">
+      <h2 class="section-title">Para qual carro você quer trocar?</h2>
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=400&h=250&fit=crop')"></div>
+          <div class="card-body">
+            <h3>Honda Civic 2022</h3>
+            <p class="card-desc">1.5 Turbo, automático, 25.000 km rodados, único dono, revisões em dia.</p>
+            <div class="card-precos">
+              <span class="preco-atual">R$ 129.900</span>
+              <span class="preco-antigo">R$ 139.900</span>
+            </div>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400&h=250&fit=crop')"></div>
+          <div class="card-body">
+            <h3>Toyota Corolla 2023</h3>
+            <p class="card-desc">2.0 Flex, automático, 18.000 km rodados, revisões na concessionária.</p>
+            <div class="card-precos">
+              <span class="preco-atual">R$ 145.000</span>
+              <span class="preco-antigo">R$ 158.000</span>
+            </div>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400&h=250&fit=crop')"></div>
+          <div class="card-body">
+            <h3>BMW 320i 2021</h3>
+            <p class="card-desc">2.0 Turbo, automático, 30.000 km, interior em couro, teto solar.</p>
+            <div class="card-precos">
+              <span class="preco-atual">R$ 215.000</span>
+              <span class="preco-antigo">R$ 235.000</span>
+            </div>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400&h=250&fit=crop')"></div>
+          <div class="card-body">
+            <h3>Jeep Compass 2022</h3>
+            <p class="card-desc">1.3 Turbo, automático, 22.000 km, câmera de ré, multimídia.</p>
+            <div class="card-precos">
+              <span class="preco-atual">R$ 159.900</span>
+              <span class="preco-antigo">R$ 172.000</span>
+            </div>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=250&fit=crop')"></div>
+          <div class="card-body">
+            <h3>Mercedes C200 2021</h3>
+            <p class="card-desc">1.5 Turbo, automático, 28.000 km, pacote premium, garantia de fábrica.</p>
+            <div class="card-precos">
+              <span class="preco-atual">R$ 249.000</span>
+              <span class="preco-antigo">R$ 269.000</span>
+            </div>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1619767886558-efdc259cde1a?w=400&h=250&fit=crop')"></div>
+          <div class="card-body">
+            <h3>VW T-Cross 2023</h3>
+            <p class="card-desc">1.0 TSI, automático, 12.000 km, sensor de estacionamento, LED.</p>
+            <div class="card-precos">
+              <span class="preco-atual">R$ 119.900</span>
+              <span class="preco-antigo">R$ 132.000</span>
+            </div>
+            <a href="#" class="btn-saiba-mais">Saiba mais</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="avaliacoes" id="avaliacoes">
+    <div class="container">
+      <h2 class="section-title">Avaliações dos Clientes</h2>
+      <div class="carrossel">
+        <button class="carrossel-btn prev" aria-label="Anterior">&lt;</button>
+        <div class="carrossel-conteudo">
+          <p class="depoimento">"Comprei meu Civic na AutoElite e foi a melhor experiência que já tive. Atendimento impecável, carro impecável e com garantia. Super recomendo para quem busca qualidade e confiança na hora de trocar de carro!"</p>
+          <span class="autor">Ricardo, Engenheiro</span>
+        </div>
+        <button class="carrossel-btn next" aria-label="Próximo">&gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contato">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 class="logo">Auto<span>Elite</span></h3>
+        <p>AutoElite Veículos Ltda.</p>
+        <p>Av. Brasil, 1500 - Centro</p>
+        <p>São Paulo, SP</p>
+        <p>AutoElite © Todos os direitos reservados 2026</p>
+      </div>
+      <div class="footer-col">
+        <h4>Nossos Serviços</h4>
+        <ul>
+          <li>Venda de Seminovos</li>
+          <li>Financiamento</li>
+          <li>Consórcio</li>
+          <li>Avaliação do seu usado</li>
+          <li>Garantia estendida</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Assine nossa newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Informe seu E-mail">
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+        <h4>Siga nossas redes sociais</h4>
+        <div class="redes-sociais">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="WhatsApp">📱</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
